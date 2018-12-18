@@ -17,3 +17,15 @@ end
 def valid_phone_number?(phone)
 
 end
+
+
+"The rain in Spain lies mainly in the plain".scan(/\w+ain/)
+=> ["rain", "Spain", "main", "plain"]
+Match
+The match method returns the first item in your string that matches a given Regular Expression as a MatchData object. For example:
+
+"The rain in Spain lies mainly in the plain".match(/\w+ain/)
+=> #<MatchData "rain"> 
+ 
+"The rain in Spain lies mainly in the plain".match(/France/)
+=> nil
